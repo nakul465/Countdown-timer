@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div id="timer">
+            <div id="time-left">00:00:00</div>
+            <button id="start-button">Start</button>
+            <button id="reset-button">Reset</button>
+        </div>
+        <div id="input-container">
+            <label for="minutes">Set Timer (minutes):</label>
+            <input type="number" id="minutes" min="1" value="5">
+            <button id="set-button">Set Timer</button>
+        </div>
+        <div id="saved-countdowns">
+            <h2>Saved Countdowns</h2>
+            <ul id="countdown-list"></ul>
+        </div>
+        <div>
+            <input type="checkbox" id="repeat-checkbox"> Repeat Countdown
+        </div>
+    </div>
+    <audio id="notificationSound" src="C:\Users\Dell\OneDrive\Desktop\fee project\bang-140381.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
